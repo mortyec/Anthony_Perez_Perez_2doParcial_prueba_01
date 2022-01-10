@@ -4,8 +4,8 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.widget.Toast;
 
-import com.aperez.apps.androidfunwithflags.ADPP_MainActivity;
-import com.aperez.apps.androidfunwithflags.R;
+import com.aperez.apps.anthony_perez_2doparcial_prueba_01.ADPP_MainActivity;
+import com.aperez.apps.anthony_perez_2doparcial_prueba_01.R;
 
 import java.util.Set;
 
