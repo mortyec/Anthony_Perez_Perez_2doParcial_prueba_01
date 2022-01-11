@@ -1,5 +1,6 @@
 package com.aperez.apps.anthony_perez_2doparcial_prueba_01;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -138,5 +139,10 @@ public class ADPP_Activity_Cliente_Login extends AppCompatActivity {
             Toast.makeText(this, "No se encontraron registros en la tabla", Toast.LENGTH_SHORT).show();
         }
 
+    }
+
+    public void onClicLogin(View view) {
+        Intent intent = new Intent(this, ADPP_Activity_Cliente_Login.class);
+        startActivity(intent);
     }
 }
