@@ -26,6 +26,7 @@ public class ADPP_Activity_Cliente_Login extends AppCompatActivity {
         editTextUsuario = findViewById(R.id.editTextUsuario);
         editTextContraseña = findViewById(R.id.editTextContraseña);
 
-        editTextLoginUsuario = findViewById(R.id.editTextContraseña);
+        editTextLoginUsuario = findViewById(R.id.editTextLoginUsuario);
+        editTextLoginContraseña = findViewById(R.id.editTextLoginContraseña);
     }
 }
