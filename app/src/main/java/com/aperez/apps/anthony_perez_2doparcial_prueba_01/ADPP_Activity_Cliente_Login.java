@@ -43,7 +43,7 @@ public class ADPP_Activity_Cliente_Login extends AppCompatActivity {
         String nombre = editTextNombre.getText().toString();
         String apellido = editTextApellido.getText().toString();
         String usuario = editTextUsuario.getText().toString();
-        String contraseña = editTextUsuario.getText().toString();
+        String contraseña = editTextContraseña.getText().toString();
 
         if(!nombre.equals("") && !apellido.equals("") && !usuario.equals("")&& !contraseña.equals("")){
             ADPP_Cliente cliente = new ADPP_Cliente();

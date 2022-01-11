@@ -49,7 +49,7 @@ public class ADPP_ClienteDAL {
         ADPP_Cliente cliente=null;
         try {
             this.openDAL();
-            String select = "SELECT Codigo, Nombre, Apellido, Correo FROM Clientes WHERE Codigo="+codigo;
+            String select = "SELECT Codigo, Nombre, Apellido, Usuario, Contraseña FROM Clientes WHERE Codigo="+codigo;
             Cursor cursor = sql.rawQuery(select, null);
 
             if(cursor.moveToFirst())
@@ -73,7 +73,7 @@ public class ADPP_ClienteDAL {
         ArrayList<String> list = null;
         try{
             this.openDAL();
-            String select = "SELECT Codigo, Nombre, Apellido, Correo FROM Clientes";
+            String select = "SELECT Codigo, Nombre, Apellido, Usuario, Contraseña FROM Clientes";
             Cursor cursor = sql.rawQuery(select, null);
 
             if(cursor.moveToFirst())
