@@ -142,7 +142,11 @@ public class ADPP_Activity_Cliente_Login extends AppCompatActivity {
     }
 
     public void onClicLogin(View view) {
-        Intent intent = new Intent(this, ADPP_Activity_Cliente_Login.class);
-        startActivity(intent);
+        if(editTextLoginUsuario.getText().toString().equals("") && editTextLoginContraseña.getText().toString().equals("")){
+            Toast.makeText(this, "Ingrese un usuario y contraseña correcta", Toast.LENGTH_SHORT).show();
+        }else{
+            Intent intent = new Intent(this, ADPP_MainActivity.class);
+            startActivity(intent);
+        }
     }
 }
