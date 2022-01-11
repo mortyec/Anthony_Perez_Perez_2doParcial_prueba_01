@@ -69,6 +69,30 @@ public class ADPP_ClienteDAL {
         return cliente;
     }
 
+    public ADPP_Cliente selectByUsuarioDAL(String Usuario){
+        ADPP_Cliente cliente=null;
+        try {
+            this.openDAL();
+            String select = "SELECT Codigo, Nombre, Apellido, Usuario, Contraseña FROM Clientes WHERE Usuario="+Usuario;
+            Cursor cursor = sql.rawQuery(select, null);
+
+            if(cursor.moveToFirst())
+            {
+                cliente = new ADPP_Cliente();
+                cliente.setNombre(cursor.getString(1));
+                cliente.setApellido(cursor.getString(2));
+                cliente.setUsuario(cursor.getString(3));
+                cliente.setContraseña(cursor.getString(4));
+            }
+
+        }catch (Exception e){
+            throw e;
+        }finally {
+            sql.close();
+        }
+        return cliente;
+    }
+
     public ArrayList<String> selectDAL(){
         ArrayList<String> list = null;
         try{
