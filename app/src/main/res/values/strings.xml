@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Android Fun With Flags</string>
+    <string name="app_name">Prueba 01 Segundo Parcial</string>
     <string name="action_settings">Settings</string>
     <string name="number_of_choices">Number of Choices</string>
     <string name="number_of_choices_description">Display 2, 4, 6 or 8 guess buttons</string>
